@@ -10,10 +10,20 @@ public class Pemilihan2Percobaan1_18{
         System.out.println("Masukkan Tahun : ");
         tahun = input18.nextInt();
 
-        if ((tahun % 4)== 0){
-            if ((tahun % 100)==0);
-            System.out.println("Tahun Kabisat");
-        } else
-            System.out.println("bukan tahun Kabisat");
+        if (tahun % 4 == 0) {
+            if (tahun % 100 == 0) {
+                if (tahun % 400 == 0) {
+                    System.out.println("Tahun Kabisat");
+                } else {
+                    System.out.println("Bukan tahun Kabisat");
+                }
+            } else {
+                System.out.println("Tahun Kabisat");
+            }
+        } else {
+            System.out.println("Bukan tahun Kabisat");
+        }
+        
+
     }
 }
